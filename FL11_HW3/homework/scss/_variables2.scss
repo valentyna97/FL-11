@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Varela&display=swap" );
+@import url("https://fonts.googleapis.com/css?family=Montaga&display=swap");
+$background-image: url(../img/m-h-night.jpg);
+$white: white;
+$font-color: #222531;
+$color-line: #FF4E33;
+$color-block: #3B3F50;
+$font: 'Varela', sans-serif;
+$font-section: 'Montaga', serif;
+$color-button: #E3AC00;
+$theme: (color-white: #21232E, font-color: white);
+$gradient: linear-gradient(to right, #E3AC00 0%, #CD5C5C 100%);
+
+@mixin button{
+  background-color: $color-button;
+  border: 1px;
+  border-radius: 4px;
+  color: white;
+}

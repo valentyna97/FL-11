@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Varela&display=swap" );
+$background-image: url(../img/m-h-day.jpg);
+$white: white;
+$font-color: #222531;
+$color-block: #222531;
+$color-line: #14A0C7;
+$font: 'Varela', sans-serif;
+$font-section: 'Varela', sans-serif;
+$color-button: #6B960C;
+$theme: (color-white: white, font-color: $font-color);
+$gradient: linear-gradient(to right, rgba(105,153,0,1) 0%, rgba(47,92,207,1) 100%);
+
+@mixin button{
+  background-color: $color-button;
+  border: 1px;
+  border-radius: 4px;
+  color: white;
+}
