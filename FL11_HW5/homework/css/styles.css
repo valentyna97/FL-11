@@ -1,0 +1,397 @@
+
+body {
+  font-family: roboto;
+  background-color: #0b192f;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+
+}
+header{
+    background-color: #162b4d;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 7%;
+}
+nav a:hover{
+    background-color: rgba(184, 184, 184, 0.2);
+}
+.title-header{
+    display: inline-flex;
+}
+.title-header h1{
+    font-weight: 100;
+    color: #ffffff;
+    margin: 0;
+    padding: 16% 0;
+}
+.title-header h1:last-child{
+    color: #B71757; ;
+}
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+.blocks, .image{
+    display: flex;
+    flex-direction: row;
+}
+.post{
+    color: #ffffff;
+}
+.blocks-responsive{
+    width: 70%;
+}
+.image{
+    width: 50%;
+}
+.post{
+    width: 50%;
+    font-weight: 100;
+}
+.post h1{
+    font-weight: 100;
+    padding-right: 17%;
+    padding-left: 6%;
+    font-size: 2.5rem;
+    margin-top: 6%;
+    margin-bottom: 0;
+}
+.post .text{
+    margin-right: 24%;
+    margin-left: 6%;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    margin-bottom: 12%;
+}
+.post .top{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.post .top-left{
+    display: flex;
+    flex-direction: row;
+}
+.image img{
+    width: 100%;
+}
+.data-right{
+   padding-right: 6%;
+    opacity: 0.5;
+}
+.data-right p:first-child, .data-left p:first-child{
+    font-size: 68px;
+    margin: 0.5% 2%;
+    font-weight: 100;
+}
+.data-right p:last-child, .data-left p:last-child{
+    font-size: 28px;
+    font-weight: 100;
+    margin: 0.5% 4%;
+    text-align: center;
+}
+.data-left{
+    padding-left: 6%;
+    opacity: 0.5;
+}
+.post.post-right .text{
+    margin-left: 24%;
+    margin-right: 6%;
+    text-align: right;
+    margin-bottom: 12%;
+}
+.post.post-right h1{
+    padding-left: 17%;
+    padding-right: 10%;
+    text-align: right;
+}
+.post.post-5{
+    width: 100%;
+}
+.post.post-5 h1{
+    width: 100%;
+    margin: 5% 5.5% 0 5.5%;
+    padding: 0;
+}
+.post.post-5 .text{
+    margin-top: 0;
+    margin-bottom: 6%;
+}
+.post.post-5 .data-right{
+    padding-right: 4%;
+}
+.block-aside{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+    margin-bottom: 6%;
+}
+.block-aside img{
+    width: 100%;
+}
+.text-aside{
+    background-color: #ffffff;
+    padding: 10%;
+}
+.text-aside h2{
+    margin: 0;
+    color: #0b192f;
+    font-weight: 200;
+    font-size: 2.2rem;
+}
+.text-aside p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: #0b192f;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.aside{
+    position: absolute;
+    width: 30%;
+    top: 5.4%;
+    right: 0;
+    margin: 0;
+}
+.blocks-responsive{
+    margin-top: 2%;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    color: #ffffff;
+    background-color: #162b4d;
+    margin-top: 2%;
+}
+footer div {
+    color: #ffffff;
+    opacity: 0.5;
+    line-height: 1.5;
+}
+footer .footer-element{
+    color: #ffffff;
+    opacity: 0.5;
+}
+footer p{
+    font-weight: 100;
+}
+footer p:first-child{
+    margin-bottom: 0;
+}
+footer p:last-child{
+    margin-top: 1%;
+}
+.image{
+    position: relative;
+}
+.blocks-responsive div.post-1, .blocks-responsive div.post-2, .blocks-responsive div.post-3, .blocks-responsive div.post-4{
+    position: relative;
+}
+.blocks-responsive .image-hover-1::before,
+.blocks-responsive div.post-1 .top::before,
+.blocks-responsive .blocks .post-1 p::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #B71757;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.blocks-responsive .image-hover-2::before,
+.blocks-responsive div.post-2 .top::before,
+.blocks-responsive .blocks .post-2 p::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #0D7E71;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.blocks-responsive .image-hover-3::before,
+.blocks-responsive div.post-3 .top::before,
+.blocks-responsive .blocks .post-3 p::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #b1660e;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.blocks-responsive .image-hover-4::before,
+.blocks-responsive div.post-4 .top::before,
+.blocks-responsive .blocks .post-4 p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #d12767;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.image-hover-1:hover:before,
+.image-hover-2:hover:before,
+.image-hover-3:hover:before,
+.image-hover-4:hover:before,
+.blocks-responsive div.post.post-1:hover::before,
+.blocks-responsive .blocks .post-1 .top:hover::before,
+.blocks-responsive .blocks .post-1 p:hover::before,
+.blocks-responsive div.post.post-2:hover::before,
+.blocks-responsive .blocks .post-2 .top:hover::before,
+.blocks-responsive .blocks .post-2 p:hover::before,
+.blocks-responsive div.post.post-3:hover::before,
+.blocks-responsive .blocks .post-3 .top:hover::before,
+.blocks-responsive .blocks .post-3 p:hover::before,
+.blocks-responsive div.post.post-4:hover::before,
+.blocks-responsive .blocks .post-4 .top:hover::before,
+.blocks-responsive .blocks .post-4 p:hover::before
+
+{
+    opacity: 0.5;
+}
+.menu-icon{
+    display: none;
+}
+@media (max-width: 768px){
+  .blocks, .image {
+      display: flex;
+      flex-direction: column;
+  }
+  .post {
+      width: 100%;
+  }
+  .image{
+      width: 100%;
+  }
+  .blocks-responsive{
+      width: 60%;
+  }
+  .aside {
+      width: 40%;
+      top: 4.3%;
+  }
+  .blocks.block-2, .blocks.block-4{
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  .post{
+      position: relative;
+  }
+  .post.post-right h1{
+      margin-right: 24%;
+      margin-left: 6%;
+      text-align: left;
+      padding-left: 0;
+  }
+  .data-right, .data-left, .post.post-5 .data-right {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 0;
+  }
+  .post .text, .post.post-right .text, .post.post-5 .text {
+      margin-bottom: 35%;
+      text-align: left;
+      margin-right: 24%;
+      margin-left: 6%;
+  }
+  nav {
+      text-align: center;
+      clear: both;
+      padding: 1rem 0;
+      width: 100%;
+  }
+  nav a{
+      display: none;
+  }
+  nav .menu-icon {
+      display: inline-block;
+      cursor: pointer;
+  }
+  nav .menu-icon .bar {
+      width: 20px;
+      height: 1px;
+      background-color: #ffffff;
+      margin: 6px 0;
+      transition: 0.4s;
+  }
+  .title-header {
+      width: 100%;
+      justify-content: center;
+      padding: 1rem 0 2rem 0;
+  }
+  .title-header h1{
+      padding: 0;
+  }
+  header{
+      display: flex;
+      flex-flow: column-reverse wrap;
+      justify-content: center;
+  }
+  footer {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+  footer div, footer p {
+      text-align: center;
+  }
+  footer p:last-child {
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1400px){
+    body {
+        margin: 0 0.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .blocks-responsive{
+        width: 100%;
+    }
+    .aside {
+        position: static;
+        width: 100%;
+
+    }
+    .block-aside{
+        margin-left: 0;
+    }
+}
