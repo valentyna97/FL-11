@@ -3,13 +3,13 @@ function addOne(x){
 }
 
 function pipe () {
-        let result = arguments[0];
-        let argLen=arguments.length;
-        for (let j=1; j<argLen; j++) {
-            let temp = arguments[j](result);
-            result = temp;
-        }
-        return result;
+    let result = arguments[0];
+    let argLen=arguments.length;
+    for (let j=1; j<argLen; j++) {
+        let temp = arguments[j](result);
+        result = temp;
+    }
+    return result;
 }
 
 console.log(pipe(1, addOne));
